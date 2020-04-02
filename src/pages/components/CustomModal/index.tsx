@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-type Props = {
+interface Props {
   children: React.ReactChild;
   closeModal: () => void;
-};
+}
 
 const Modal = React.memo(({ children, closeModal }: Props) => {
   const domEl = document.getElementById('modal-root');

@@ -8,11 +8,35 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "allowJs": true,
+    "lib": ["esnext", "dom"],
+    "noEmit": true,
     "strict": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "strictPropertyInitialization": true,
+    "skipLibCheck": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@tmp/*": ["src/pages/.umi/*"]
-    },
-    "allowSyntheticDefaultImports": true
-  }
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.(spec|test).ts?(x)",
+    "build",
+    "__tests__",
+    "__mocks__",
+    "example"
+  ]
 }
